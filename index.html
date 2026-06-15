@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Al3ph-Zer0 | CV & Math Notes</title>
+  <title>Il Young Jeong | Model Theory</title>
   <style>
     :root {
       color-scheme: light;
@@ -25,7 +25,7 @@
     }
     header { border-bottom: 1px solid var(--line); background: #fff; }
     nav {
-      max-width: 960px;
+      max-width: 980px;
       margin: 0 auto;
       padding: 18px 22px;
       display: flex;
@@ -35,12 +35,14 @@
     }
     nav a { color: var(--ink); text-decoration: none; font-weight: 600; }
     .links { display: flex; gap: 16px; flex-wrap: wrap; font-size: .95rem; }
-    main { max-width: 960px; margin: 0 auto; padding: 64px 22px 72px; }
-    .intro { max-width: 760px; margin-bottom: 48px; }
-    h1 { margin: 0 0 18px; font-size: clamp(2.4rem, 7vw, 4.8rem); line-height: 1.02; letter-spacing: 0; }
+    main { max-width: 980px; margin: 0 auto; padding: 64px 22px 72px; }
+    .intro { max-width: 780px; margin-bottom: 48px; }
+    h1 { margin: 0 0 18px; font-size: clamp(2.25rem, 6vw, 4.4rem); line-height: 1.04; letter-spacing: 0; }
     h2 { margin: 0 0 14px; font-size: 1.35rem; }
+    h3 { margin: 0 0 8px; font-size: 1rem; }
     p { margin: 0 0 18px; }
-    .lead { color: var(--muted); font-size: 1.12rem; max-width: 680px; }
+    a { color: var(--accent-dark); }
+    .lead { color: var(--muted); font-size: 1.12rem; max-width: 720px; }
     .button-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
     .button {
       display: inline-flex;
@@ -56,13 +58,17 @@
       font-weight: 700;
     }
     .button.secondary { background: #fff; color: var(--accent-dark); }
-    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 30px; }
     section { margin-top: 44px; padding-top: 28px; border-top: 1px solid var(--line); }
-    .card { min-height: 190px; padding: 20px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 20px; }
+    .card { min-height: 178px; padding: 20px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
     .tag { display: inline-block; margin-bottom: 12px; padding: 4px 9px; border-radius: 999px; background: var(--soft); color: var(--accent-dark); font-size: .82rem; font-weight: 700; }
+    .meta { color: var(--muted); font-size: .94rem; }
     ul { margin: 12px 0 0; padding-left: 20px; }
     li + li { margin-top: 8px; }
-    footer { max-width: 960px; margin: 0 auto; padding: 0 22px 34px; color: var(--muted); font-size: .92rem; }
+    .list-clean { list-style: none; padding: 0; margin: 18px 0 0; }
+    .list-clean li { padding: 16px 0; border-top: 1px solid var(--line); }
+    .list-clean li:first-child { border-top: 0; padding-top: 0; }
+    footer { max-width: 980px; margin: 0 auto; padding: 0 22px 34px; color: var(--muted); font-size: .92rem; }
     @media (max-width: 760px) {
       nav { align-items: flex-start; flex-direction: column; }
       main { padding-top: 44px; }
@@ -73,11 +79,12 @@
 <body>
   <header>
     <nav aria-label="Primary navigation">
-      <a href="#top">Al3ph-Zer0</a>
+      <a href="#top">Il Young Jeong</a>
       <div class="links">
+        <a href="#research">Research</a>
+        <a href="#presentations">Presentations</a>
         <a href="#cv">CV</a>
-        <a href="#notes">Math Notes</a>
-        <a href="#projects">Projects</a>
+        <a href="#notes">Notes</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -85,35 +92,68 @@
 
   <main id="top">
     <div class="intro">
-      <h1>CV & Math Study Notes</h1>
-      <p class="lead">수학 공부 기록, 읽은 자료, 정리 노트, CV를 모아두는 개인 아카이브입니다.</p>
+      <h1>Model theory, zero-one phenomena, and asymptotic behavior of models.</h1>
+      <p class="lead">I am a first-year M.S. student in Mathematical Sciences at UNIST. My current work is in model theory, especially zero-one properties and asymptotic behavior of classes of models.</p>
       <div class="button-row">
-        <a class="button" href="#cv">View CV</a>
-        <a class="button secondary" href="#notes">Browse Notes</a>
+        <a class="button" href="#research">Research</a>
+        <a class="button secondary" href="#presentations">Presentations</a>
       </div>
     </div>
+
+    <section id="research">
+      <span class="tag">Research</span>
+      <h2>Research Interests</h2>
+      <p>I am currently studying model-theoretic asymptotics, with a focus on zero-one laws and first-order limit behavior for classes of finite structures and models.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Model Theory</h3>
+          <p>Fraisse classes, first-order limit properties, and logical structure in families of models.</p>
+        </article>
+        <article class="card">
+          <h3>Zero-One Phenomena</h3>
+          <p>Asymptotic truth values of first-order sentences over natural classes of finite structures.</p>
+        </article>
+        <article class="card">
+          <h3>Asymptotic Behavior</h3>
+          <p>Limit behavior of classes of models from logical, combinatorial, and algebraic viewpoints.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="presentations">
+      <span class="tag">Presentations</span>
+      <h2>Presentations and Academic Activities</h2>
+      <ul class="list-clean">
+        <li>
+          <h3>Fraisse Classes and the First-Order Limit Property</h3>
+          <p class="meta">Invited student talk, <a href="https://korealogicday.org/2026/">The Fifth Korea Logic Day 2026</a>, KAIST, Daejeon, January 14, 2026.</p>
+        </li>
+        <li>
+          <h3>Model Theory Workshop</h3>
+          <p class="meta">Lecturer and organizer, UNIST, 2026.</p>
+        </li>
+        <li>
+          <h3>Talk on asymptotic behavior of classes of models and zero-one phenomena</h3>
+          <p class="meta">Korean Mathematical Society 80th Anniversary Meeting, upcoming.</p>
+        </li>
+      </ul>
+    </section>
 
     <section id="cv">
       <span class="tag">CV</span>
       <h2>Curriculum Vitae</h2>
-      <p>여기에 CV PDF 링크를 추가하세요. 예: <code>files/cv.pdf</code>를 업로드한 뒤 아래 링크를 바꾸면 됩니다.</p>
+      <p>CV PDF will be posted here after the current Overleaf version is finalized.</p>
       <a class="button secondary" href="#">CV PDF 준비 중</a>
     </section>
 
     <section id="notes">
-      <span class="tag">Math Notes</span>
-      <h2>수학 공부 노트</h2>
+      <span class="tag">Notes</span>
+      <h2>Math Study Notes</h2>
       <div class="grid">
-        <article class="card"><h2>Algebra</h2><p>군, 환, 체, 가환대수, 대수기하 관련 정리.</p><ul><li>노트 링크 추가 예정</li></ul></article>
-        <article class="card"><h2>Analysis</h2><p>해석학, 측도론, 함수해석학 관련 정리.</p><ul><li>노트 링크 추가 예정</li></ul></article>
-        <article class="card"><h2>Probability</h2><p>확률론, 확률과정, 통계적 사고 관련 정리.</p><ul><li>노트 링크 추가 예정</li></ul></article>
+        <article class="card"><h3>Model Theory</h3><p>Reading notes and seminar materials on model theory and asymptotic behavior.</p></article>
+        <article class="card"><h3>Algebra</h3><p>Notes on algebra, field arithmetic, and related examples.</p></article>
+        <article class="card"><h3>Analysis</h3><p>Course notes and problem writeups in analysis and probability.</p></article>
       </div>
-    </section>
-
-    <section id="projects">
-      <span class="tag">Projects</span>
-      <h2>Projects & Reading</h2>
-      <p>세미나 발표, 독서 기록, 계산 실험, 짧은 글을 여기에 추가할 수 있습니다.</p>
     </section>
 
     <section id="contact">
