@@ -5,34 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Il Young Jeong | Model Theory</title>
   <style>
-    :root {
-      color-scheme: light;
-      --ink: #18202a;
-      --muted: #667085;
-      --line: #d9e1ea;
-      --paper: #f7f9fc;
-      --accent: #0f766e;
-      --accent-dark: #0b5f59;
-      --soft: #e9f5f3;
-    }
+    :root { color-scheme: light; --ink: #18202a; --muted: #667085; --line: #d9e1ea; --paper: #f7f9fc; --accent: #0f766e; --accent-dark: #0b5f59; --soft: #e9f5f3; }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--ink);
-      background: var(--paper);
-      line-height: 1.6;
-    }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; }
     header { border-bottom: 1px solid var(--line); background: #fff; }
-    nav {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 18px 22px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-    }
+    nav { max-width: 980px; margin: 0 auto; padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
     nav a { color: var(--ink); text-decoration: none; font-weight: 600; }
     .links { display: flex; gap: 16px; flex-wrap: wrap; font-size: .95rem; }
     main { max-width: 980px; margin: 0 auto; padding: 64px 22px 72px; }
@@ -44,19 +21,7 @@
     a { color: var(--accent-dark); }
     .lead { color: var(--muted); font-size: 1.12rem; max-width: 720px; }
     .button-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 42px;
-      padding: 0 16px;
-      border: 1px solid var(--accent);
-      border-radius: 6px;
-      background: var(--accent);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-    }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 0 16px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; }
     .button.secondary { background: #fff; color: var(--accent-dark); }
     section { margin-top: 44px; padding-top: 28px; border-top: 1px solid var(--line); }
     .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 20px; }
@@ -69,11 +34,7 @@
     .list-clean li { padding: 16px 0; border-top: 1px solid var(--line); }
     .list-clean li:first-child { border-top: 0; padding-top: 0; }
     footer { max-width: 980px; margin: 0 auto; padding: 0 22px 34px; color: var(--muted); font-size: .92rem; }
-    @media (max-width: 760px) {
-      nav { align-items: flex-start; flex-direction: column; }
-      main { padding-top: 44px; }
-      .grid { grid-template-columns: 1fr; }
-    }
+    @media (max-width: 760px) { nav { align-items: flex-start; flex-direction: column; } main { padding-top: 44px; } .grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -96,7 +57,7 @@
       <p class="lead">I am a first-year M.S. student in Mathematical Sciences at UNIST. My current work is in model theory, especially zero-one properties and asymptotic behavior of classes of models.</p>
       <div class="button-row">
         <a class="button" href="#research">Research</a>
-        <a class="button secondary" href="#presentations">Presentations</a>
+        <a class="button secondary" href="files/CV.pdf">Download CV</a>
       </div>
     </div>
 
@@ -105,18 +66,9 @@
       <h2>Research Interests</h2>
       <p>I am currently studying model-theoretic asymptotics, with a focus on zero-one laws and first-order limit behavior for classes of finite structures and models.</p>
       <div class="grid">
-        <article class="card">
-          <h3>Model Theory</h3>
-          <p>Fraisse classes, first-order limit properties, and logical structure in families of models.</p>
-        </article>
-        <article class="card">
-          <h3>Zero-One Phenomena</h3>
-          <p>Asymptotic truth values of first-order sentences over natural classes of finite structures.</p>
-        </article>
-        <article class="card">
-          <h3>Asymptotic Behavior</h3>
-          <p>Limit behavior of classes of models from logical, combinatorial, and algebraic viewpoints.</p>
-        </article>
+        <article class="card"><h3>Model Theory</h3><p>Fraisse classes, first-order limit properties, and logical structure in families of models.</p></article>
+        <article class="card"><h3>Zero-One Phenomena</h3><p>Asymptotic truth values of first-order sentences over natural classes of finite structures.</p></article>
+        <article class="card"><h3>Asymptotic Behavior</h3><p>Limit behavior of classes of models from logical, combinatorial, and algebraic viewpoints.</p></article>
       </div>
     </section>
 
@@ -124,26 +76,17 @@
       <span class="tag">Presentations</span>
       <h2>Presentations and Academic Activities</h2>
       <ul class="list-clean">
-        <li>
-          <h3>Fraisse Classes and the First-Order Limit Property</h3>
-          <p class="meta">Invited student talk, <a href="https://korealogicday.org/2026/">The Fifth Korea Logic Day 2026</a>, KAIST, Daejeon, January 14, 2026.</p>
-        </li>
-        <li>
-          <h3>Model Theory Workshop</h3>
-          <p class="meta">Lecturer and organizer, UNIST, 2026.</p>
-        </li>
-        <li>
-          <h3>Talk on asymptotic behavior of classes of models and zero-one phenomena</h3>
-          <p class="meta">Korean Mathematical Society 80th Anniversary Meeting, upcoming.</p>
-        </li>
+        <li><h3>Fraisse Classes and the First-Order Limit Property</h3><p class="meta">Invited student talk, <a href="https://korealogicday.org/2026/">The Fifth Korea Logic Day 2026</a>, KAIST, Daejeon, January 14, 2026.</p></li>
+        <li><h3>Model Theory Workshop</h3><p class="meta">Lecturer and organizer, UNIST, 2026.</p></li>
+        <li><h3>Talk on asymptotic behavior of classes of models and zero-one phenomena</h3><p class="meta">Korean Mathematical Society 80th Anniversary Meeting, upcoming.</p></li>
       </ul>
     </section>
 
     <section id="cv">
       <span class="tag">CV</span>
       <h2>Curriculum Vitae</h2>
-      <p>CV PDF will be posted here after the current Overleaf version is finalized.</p>
-      <a class="button secondary" href="#">CV PDF 준비 중</a>
+      <p>The current CV is available as a PDF.</p>
+      <a class="button secondary" href="files/CV.pdf">Download CV PDF</a>
     </section>
 
     <section id="notes">
